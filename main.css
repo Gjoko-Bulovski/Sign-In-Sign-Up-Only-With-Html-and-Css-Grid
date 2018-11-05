@@ -1,0 +1,141 @@
+body {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: #121515;
+}
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+.h1-title {
+    text-align: center;
+    color: #36B1BF;
+}
+.form {
+    width: 425px;
+}
+.a-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.a-group a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 24px;
+}
+.a-sign-in {
+    background-color: #36B1BF;
+    color: #fff;
+}
+.a-sign-up {
+    background-color: #4AD9D9;
+    color: #121515;
+}
+.form-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+.form-content input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+.form-content input:focus {
+    box-shadow: inset 0px 0px 5px #121515;
+}
+#sign-in {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 20px;
+    background-color: #36B1BF;
+    width: 100%;
+    position: absolute;
+    top:0;
+    color: #fff;
+    padding: 0 10px;
+    z-index: 1;
+} 
+#sign-in h1 {
+    margin-bottom: 0;
+}
+.frg-password {
+    text-decoration: none;
+    color: #ececec;
+}
+.frg-password:hover {
+    color: #121515;
+}
+.btn-sign-in {
+    outline: none;
+    border: 3px solid #fff;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background: none;
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+.btn-sign-in:hover {
+    background: #fff;
+    color: #36B1BF;
+}
+#sign-up {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 20px;
+    background-color: #4AD9D9;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 0 10px;
+    opacity: 0;
+
+}
+#sign-up:target {
+    opacity: 1;
+    z-index: 2;
+}
+#sign-up h1 {
+    margin-bottom: 0;
+    color: #121515;
+}
+.btn-sign-up {
+    outline: none;
+    border: 3px solid #121515;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background: none;
+    font-weight: 600;
+    color: #121515;
+    font-size: 24px;
+    cursor: pointer;
+}
+.btn-sign-up:hover {
+    background: #121515;
+    color: #4AD9D9;
+}
+@media screen and (max-width: 425px) {
+    .form {
+        width: 100%;
+    }
+}
